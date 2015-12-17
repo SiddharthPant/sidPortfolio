@@ -27,7 +27,7 @@
 						<img src="assets/images/php_code.jpg" alt="PHP code" class="img-circle img-thumbnail">
 						<h2>Programming</h2>
 						<p>I love to program and I have delved into many languages over the years of my school and college life. See the languages I have learned.</p>
-						<a href="#" class="btn btn-primary" title="See more">See works »</a>
+						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -35,7 +35,7 @@
 						<img src="assets/images/circuit.jpg" alt="Circuit" class="img-circle img-thumbnail">
 						<h2>Circuit Designer</h2>
 						<p>I like to apply concepts instead of just keeping them in my brain. Read more about in which projects I have actually applied them.</p>
-						<a href="#" class="btn btn-primary" title="See more">See works »</a>
+						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -43,7 +43,7 @@
 						<img src="assets/images/internet.jpg" alt="Surf the earth" class="img-circle img-thumbnail">
 						<h2>My Websites</h2>
 						<p>Yup! I have created websites which are also being used by my fellow students. And I also have some articles in my own personal blog.</p>
-						<a href="#" class="btn btn-primary" title="See more">See works »</a>
+						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
 					</div>
 				</div>
 			</div>
@@ -57,7 +57,7 @@
 							<br>
 							<br>
 						</p>
-						<a href="#" class="btn btn-primary" title="See more">See works »</a>
+						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -66,7 +66,7 @@
 						<h2>*NIX</h2>
 						<p>I am quite familiar to the *nix systems and primarily use them on my personal machines. I have been using linux since my school days
 						</p>
-						<a href="#" class="btn btn-primary" title="See more">See works »</a>
+						<a type="button" class="btn btn-primary" data-toggle="TaskListDialog" data-target="#TaskListDialog" title="See more">See works »</a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -77,13 +77,32 @@
 							<br>
 							<br>
 						</p>
-						<a href="#" class="btn btn-primary" title="See more">See works »</a>
+						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- /container -->
+	<!-- Modal -->
+<div id="TaskListDialog" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Programming</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
 
 </html>

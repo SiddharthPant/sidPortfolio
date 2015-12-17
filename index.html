@@ -2,107 +2,145 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
 
-	<title>Siddharth Pant</title>
+  <title>Siddharth Pant</title>
 
-	<link rel="stylesheet" type="text/css" href="scripts/bootstrap-3.css">
-	<link rel="stylesheet" type="text/css" href="scripts/font-awesome-4.css">
-	<link rel="stylesheet" type="text/css" href="scripts/style.css">
-	<script src="scripts/jquery.js"></script>
-	<script src="scripts/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="scripts/bootstrap-3.css">
+  <link rel="stylesheet" type="text/css" href="scripts/font-awesome-4.css">
+  <link rel="stylesheet" type="text/css" href="scripts/style.css">
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/bootstrap.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.btn-primary').on('click', function() {
+        whichtab = $(this).data('opentab');
+        $('#TaskListDialog').modal('show');
+        $('.nav-tabs li:eq(' + whichtab + ') a').tab('show');
+      });
+    });
+  </script>
 
 </head>
 
 <body>
-	<div class="container">
-		<div class="page-header">
-			<h1 class="text-center">Who am I?</h1>
-		</div>
-		<p class="lead text-center">I am a programmer who loves to build things</p>
-		<div class="container">
-			<div class="row stylish-panel">
-				<div class="col-md-4">
-					<div>
-						<img src="assets/images/php_code.jpg" alt="PHP code" class="img-circle img-thumbnail">
-						<h2>Programming</h2>
-						<p>I love to program and I have delved into many languages over the years of my school and college life. See the languages I have learned.</p>
-						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div>
-						<img src="assets/images/circuit.jpg" alt="Circuit" class="img-circle img-thumbnail">
-						<h2>Circuit Designer</h2>
-						<p>I like to apply concepts instead of just keeping them in my brain. Read more about in which projects I have actually applied them.</p>
-						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div>
-						<img src="assets/images/internet.jpg" alt="Surf the earth" class="img-circle img-thumbnail">
-						<h2>My Websites</h2>
-						<p>Yup! I have created websites which are also being used by my fellow students. And I also have some articles in my own personal blog.</p>
-						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
-					</div>
-				</div>
-			</div>
-			<div class="row stylish-panel">
-				<div class="col-md-4">
-					<div>
-						<img src="assets/images/graduation_cap.jpg" alt="Graduation Cap" class="img-circle img-thumbnail">
-						<h2>Academics</h2>
-						<p>I have graduated in B.E. from Electronics and Communication branch.
-							<br>
-							<br>
-							<br>
-						</p>
-						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div>
-						<img src="assets/images/penguin.png" alt="Linux Tux" class="img-circle img-thumbnail">
-						<h2>*NIX</h2>
-						<p>I am quite familiar to the *nix systems and primarily use them on my personal machines. I have been using linux since my school days
-						</p>
-						<a type="button" class="btn btn-primary" data-toggle="TaskListDialog" data-target="#TaskListDialog" title="See more">See works »</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div>
-						<img src="assets/images/workshops.jpg" alt="Workshops" class="img-circle img-thumbnail">
-						<h2>Workshops</h2>
-						<p>I have attended countless workshops in my college life on myriad of topics like Bootstrap, robotics etc.
-							<br>
-							<br>
-						</p>
-						<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#TaskListDialog" title="See more">See works »</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /container -->
-	<!-- Modal -->
-<div id="TaskListDialog" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Programming</h4>
+  <div class="container">
+    <div class="page-header">
+      <h1 class="text-center">Who am I?</h1>
+    </div>
+    <p class="lead text-center">I am a programmer who loves to build things</p>
+    <div class="container">
+      <div class="row stylish-panel">
+        <div class="col-md-4">
+          <div>
+            <img src="assets/images/php_code.jpg" alt="PHP code" class="img-circle img-thumbnail">
+            <h2>Programming</h2>
+            <p>I love to program and I have delved into many languages over the years of my school and college life. See the languages I have learned.</p>
+            <a type="button" class="btn btn-primary" data-opentab="0" title="See More">See works »</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="assets/images/circuit.jpg" alt="Circuit" class="img-circle img-thumbnail">
+            <h2>Circuit Designer</h2>
+            <p>I like to apply concepts instead of just keeping them in my brain. Read more about in which projects I have actually applied them.</p>
+            <a type="button" class="btn btn-primary" data-opentab="1" title="See More">See works »</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="assets/images/internet.jpg" alt="Surf the earth" class="img-circle img-thumbnail">
+            <h2>My Websites</h2>
+            <p>Yup! I have created websites which are also being used by my fellow students. And I also have some articles in my own personal blog.</p>
+            <a type="button" class="btn btn-primary" data-opentab="2" title="See More">See works »</a>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <div class="row stylish-panel">
+        <div class="col-md-4">
+          <div>
+            <img src="assets/images/graduation_cap.jpg" alt="Graduation Cap" class="img-circle img-thumbnail">
+            <h2>Academics</h2>
+            <p>I have graduated in B.E. from Electronics and Communication branch.
+              <br>
+              <br>
+              <br>
+            </p>
+            <a type="button" class="btn btn-primary" data-opentab="3" title="See More">See works »</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="assets/images/penguin.png" alt="Linux Tux" class="img-circle img-thumbnail">
+            <h2>*NIX</h2>
+            <p>I am quite familiar to the *nix systems and primarily use them on my personal machines. I have been using linux since my school days
+            </p>
+            <a type="button" class="btn btn-primary" data-opentab="4" title="See More">See works »</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="assets/images/workshops.jpg" alt="Workshops" class="img-circle img-thumbnail">
+            <h2>Workshops</h2>
+            <p>I have attended countless workshops in my college life on myriad of topics like Bootstrap, robotics etc.
+              <br>
+              <br>
+            </p>
+            <a type="button" class="btn btn-primary" data-opentab="5" title="See More">See works »</a>
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
-</div>
+  <!-- /container -->
+  <!-- Modal -->
+  <div id="TaskListDialog" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="#Programming" aria-controls="Programming" role="tab" data-toggle="tab">Programming</a>
+            </li>
+            <li role="presentation" ><a href="#Ckt_Design" aria-controls="Ckt_Design" role="tab" data-toggle="tab">Ckt Design</a>
+            </li>
+            <li role="presentation" ><a href="#Websites" aria-controls="Websites" role="tab" data-toggle="tab">Websites</a>
+            </li>
+            <li role="presentation" ><a href="#Academics" aria-controls="Academics" role="tab" data-toggle="tab">Academics</a>
+            </li>
+            <li role="presentation" ><a href="#Linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a>
+            </li>
+            <li role="presentation" ><a href="#Workshops" aria-controls="Workshops" role="tab" data-toggle="tab">Workshops</a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane" id="Programming">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+              recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            <div role="tabpanel" class="tab-pane" id="Ckt_Design">Lrem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book.
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Websites">Loem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+              recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            <div role="tabpanel" class="tab-pane" id="Academics">Lorm Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+            <div role="tabpanel" class="tab-pane" id="Linux">Lore Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+            <div role="tabpanel" class="tab-pane" id="Workshops">Lorem psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

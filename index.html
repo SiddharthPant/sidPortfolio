@@ -9,17 +9,10 @@
   <link rel="stylesheet" type="text/css" href="scripts/bootstrap-3.css">
   <link rel="stylesheet" type="text/css" href="scripts/font-awesome-4.css">
   <link rel="stylesheet" type="text/css" href="scripts/style.css">
+
   <script src="scripts/jquery.js"></script>
   <script src="scripts/bootstrap.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.btn-primary').on('click', function() {
-        whichtab = $(this).data('opentab');
-        $('#TaskListDialog').modal('show');
-        $('.nav-tabs li:eq(' + whichtab + ') a').tab('show');
-      });
-    });
-  </script>
+  <script src="scripts/jscript.js"></script>
 
 </head>
 
@@ -105,32 +98,72 @@
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation"><a href="#Programming" aria-controls="Programming" role="tab" data-toggle="tab">Programming</a>
             </li>
-            <li role="presentation" ><a href="#Ckt_Design" aria-controls="Ckt_Design" role="tab" data-toggle="tab">Ckt Design</a>
+            <li role="presentation"><a href="#Ckt_Design" aria-controls="Ckt_Design" role="tab" data-toggle="tab">Ckt Design</a>
             </li>
-            <li role="presentation" ><a href="#Websites" aria-controls="Websites" role="tab" data-toggle="tab">Websites</a>
+            <li role="presentation"><a href="#Websites" aria-controls="Websites" role="tab" data-toggle="tab">Websites</a>
             </li>
-            <li role="presentation" ><a href="#Academics" aria-controls="Academics" role="tab" data-toggle="tab">Academics</a>
+            <li role="presentation"><a href="#Academics" aria-controls="Academics" role="tab" data-toggle="tab">Academics</a>
             </li>
-            <li role="presentation" ><a href="#Linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a>
+            <li role="presentation"><a href="#Linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a>
             </li>
-            <li role="presentation" ><a href="#Workshops" aria-controls="Workshops" role="tab" data-toggle="tab">Workshops</a>
+            <li role="presentation"><a href="#Workshops" aria-controls="Workshops" role="tab" data-toggle="tab">Workshops</a>
             </li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane" id="Programming">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-              recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-            <div role="tabpanel" class="tab-pane" id="Ckt_Design">Lrem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-              book.
+            <div role="tabpanel" class="tab-pane" id="Programming">
+              <ul class="list-group">
+                <li class="list-group-item"><strong>Languages</strong>: C/C++, JavaScript, jQuery, HTML/CSS, Bootstrap</li>
+                <li class="list-group-item">Secured <strong>Second position</strong> in Debugging contest at college's techfest <strong>e-spirIT</strong></li>
+                <li class="list-group-item">Completed C/C++ certification from <strong>NIIT</strong></li>
+                <li class="list-group-item">Familiar with version control system <strong>git</strong>(have done course from Udacity). And yeah this site is being developed using git.</li>
+                <li class="list-group-item">I also have an active presence in forums like stack<strong>overflow</strong> or sites like <strong>GitHub</strong>.</li>
+              </ul>
             </div>
-            <div role="tabpanel" class="tab-pane" id="Websites">Loem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-              recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-            <div role="tabpanel" class="tab-pane" id="Academics">Lorm Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
-            <div role="tabpanel" class="tab-pane" id="Linux">Lore Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+            <div role="tabpanel" class="tab-pane" id="Ckt_Design">
+              <ul class="list-group">
+                <li class="list-group-item">Created Arduino &amp; IR based Attendance monitoring system as major project</li>
+                <li class="list-group-item">Created Arduino based Attendance monitoring system as minor project</li>
+                <li class="list-group-item">Created two hobby projects(Automatic railway barrier sytem) which I was later able to sell.</li>
+                <li class="list-group-item">Completed training <strong>VLSI Design</strong> from <strong>CRISP, India</strong></li>
+                <li class="list-group-item">Completed training for <strong>Embedded Systems</strong> from <strong>Sofcon India Pvt. Ltd.</strong></li>
+                <li class="list-group-item">Secured <strong>first position</strong> in Circuit Designing at my college's <strong>Antarpravah-2k14</strong> techfest</li>
+                <li class="list-group-item">Besides this I am usually the goto guy in my friend circle and college juniors whenever they have any technical software and hardware problems or they want to build their next minor/major project</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Websites">
+              <div class="list-group">
+                <a href="http://bistdoc.appspot.com" class="list-group-item">
+                  <h4 class="list-group-item-heading">BistDoc: Docs You Need!</h4>
+                  <p class="list-group-item-text">This website is used at my college for sharing of any documents like practical manuals etc.</p>
+                </a>
+                <a href="" class="list-group-item">
+                  <h4 class="list-group-item-heading">My Portfolio</h4>
+                  <p class="list-group-item-text">You are looking at it. Its a bootstrap and jQuery based site for showing off my skills as they are now.</p>
+                </a>
+                <a href="https://sidupdates.wordpress.com/" class="list-group-item">
+                  <h4 class="list-group-item-heading">My blog</h4>
+                  <p class="list-group-item-text">Its a technical cum philosophical blog that I am planning to keep writing one or two articles at a time whenever I get time</p>
+                </a>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Academics">
+              <div class="list-group">
+                <a href="#" class="list-group-item">
+                  <h4 class="list-group-item-heading">Class X</h4>
+                  <p class="list-group-item-text">91 %</p>
+                </a>
+                <a href="#" class="list-group-item">
+                  <h4 class="list-group-item-heading">Class XII (PCM)</h4>
+                  <p class="list-group-item-text">69.2 %</p>
+                </a>
+                <a href="#" class="list-group-item">
+                  <h4 class="list-group-item-heading">B.E. (EC)</h4>
+                  <p class="list-group-item-text">6.67</p>
+                </a>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Linux">I am familiar with the major distros of today like Ubuntu, Fedora, CentOS etc. I use linux as my main operating system.</div>
             <div role="tabpanel" class="tab-pane" id="Workshops">Lorem psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
               book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
           </div>
